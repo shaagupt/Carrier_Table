@@ -52,17 +52,25 @@
         }
 
         td.low {
-    background-color: #86d0e9; /* Light red for LOW */
+    background-color: #86d0e9; 
         }
 
         td.nominal {
-            background-color: #92f6b2; /* Light yellow for NOMINAL */
+            background-color: #5fdb86; 
         }
 
         td.high {
-            background-color: #ffaebf; /* Light green for HIGH */
+            background-color: #f2869d; 
         }
-        
+
+        .fixed-notes {
+            position: fixed;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            z-index: 100;
+        }
+                
     </style>
 
 </head>
@@ -346,10 +354,12 @@
                         </tbody>
             </table>
         
-            <div class="row mt-3">
-                <div class="col-md-4 text-center"><h5>13.7 Mbtuh and below is LOW</h5></div>
-                <div class="col-md-4 text-center"><h5>13.8 Mbtuh to 40.1 is NOMINAL</h5></div>
-                <div class="col-md-4 text-center"><h5>40.2 Mbtuh and above is HIGH</h5></div>
+            <div class="fixed-notes">
+                <div class="row">
+                    <div class="col-md-4"><h5 style="color: #86d0e9;">13.7 Mbtuh and below is LOW.</h5></div>
+                    <div class="col-md-4"><h5 style="color: #5fdb86;">13.8 Mbtuh to 40.1 is NOMINAL.</h5></div>
+                    <div class="col-md-4"><h5 style="color: #f2869d;">40.2 Mbtuh and above is HIGH.</h5></div>
+                </div>
             </div>
            
             
